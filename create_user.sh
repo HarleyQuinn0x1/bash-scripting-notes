@@ -20,7 +20,6 @@ set_password(){
 	do
 		read -s -p "Enter a password for the new user $1: " USER_PASSWORD
 	done
-
 	echo "$1:$USER_PASSWORD" | sudo chpasswd
 }
 
